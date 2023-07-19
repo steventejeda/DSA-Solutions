@@ -1,5 +1,5 @@
 class Solution:
-    def calPoints(self, operations)
+    def calPoints(self, operations):
         stack = []
 
         for op in operations:
