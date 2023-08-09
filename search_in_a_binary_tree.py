@@ -13,3 +13,17 @@ class Solution:
             else: 
                 root = root.left
         return None
+    
+    #Implement recursive approach
+    def searchBSTRecursively(self, root: TreeNode, val) -> TreeNode:
+        if not root: 
+            return None
+
+        while root: 
+            if root.val == val: 
+                return root
+            elif val > root.val: 
+                return self.searchBSTRecursively(root.right, val)
+            else:
+                return self.searchBSTRecursively(root.left, val)
+            
