@@ -18,3 +18,9 @@ def inOrderTraversal(root: Optional[TreeNode]):
         inOrder(root.right)
     inOrder(root)
     return result
+
+tree = TreeNode(1)
+tree.right = TreeNode(2)
+tree.right.left = TreeNode(3)
+
+print(inOrderTraversal(tree))
