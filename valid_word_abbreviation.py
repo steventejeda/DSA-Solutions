@@ -15,8 +15,8 @@ def validWordAbbreviation(word, abbr):
         else:
             if word[word_ptr] != abbr[abbr_ptr]:
                 return False
-        word_ptr += 1
-        abbr_ptr += 1
+            word_ptr += 1
+            abbr_ptr += 1
     return word_ptr == len(word) and abbr_ptr == len(abbr)
 
-print(validWordAbbreviation(word = "internationalization", abbr = "i12iz4n"))
+print(validWordAbbreviation(word = "internationalization", abbr = "i5a11o1"))
