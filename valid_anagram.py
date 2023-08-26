@@ -15,3 +15,8 @@ def isAnagram(s,t):
 # Time: O(s + t)
 # Space: O(s + t)
 print(isAnagram(s = "anagram", t = "nagaram"))
+
+def isSortedAnagram(s,t):
+    return sorted(s) == sorted(t)
+
+print(isAnagram(s = "anagram", t = "nagaram"))
