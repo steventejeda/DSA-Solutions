@@ -7,8 +7,8 @@ class Solution:
 
         for i in range(1, n + 1):
             prefix_n[i] = prefix_n[i-1]
-            if customers[i] == "N":
-                prefix_n[n] += 1
+            if customers[i - 1] == "N":
+                prefix_n[i] += 1
         for i in range(n - 1, -1, -1):
             postfix_y[i] = postfix_y[i+1]
             if customers[i] == "Y":
